@@ -1,9 +1,11 @@
-html,
+@import "../node_modules/react-grid-layout/css/styles.css";
+@import "../node_modules/react-resizable/css/styles.css";
+
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans,
+    Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
@@ -14,4 +16,19 @@ a {
 * {
   box-sizing: border-box;
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.vjs-texttrack-settings {
+  display: none;
+}
+
+.vjs-control-bar {
+  display: none;
+  border: 1px solid red;
+}
+
+.vjs-big-play-button {
+  display: none;
 }

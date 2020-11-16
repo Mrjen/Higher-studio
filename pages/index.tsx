@@ -1,12 +1,12 @@
-import React from "react";
-import PageHeader from "../components/pageHeader";
-import style from "../styles/Home.scss";
+import React, { useEffect, useRef, useState } from "react";
+import HomePage from "./home/index";
+import style from "./index.scss";
 
 const Home = () => {
   return (
-    <div className={style.container}>
-      <PageHeader />
-    </div>
+    <>
+      <HomePage />
+    </>
   );
 };
 

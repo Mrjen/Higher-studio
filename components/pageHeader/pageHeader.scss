@@ -1,12 +1,13 @@
-.nav{
+.nav {
   width: 100%;
   height: 100px;
   position: sticky;
   top: 0;
-  background:rgba($color: #000, $alpha: .3);
+  background: rgba($color: #000, $alpha: 0.1);
   display: flex;
   align-items: center;
-  .main{
+  z-index: 100;
+  .main {
     width: 100%;
     height: 100%;
     max-width: 1400px;
@@ -14,24 +15,33 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    .navlogo{
+    .navlogo {
       display: block;
       width: 204px;
       height: 30px;
     }
-    .navlist{
+    .navlist {
       display: flex;
       width: 100%;
       max-width: 50%;
       justify-content: space-between;
     }
-    .navitem{
+    .navitem {
       cursor: pointer;
       padding: 10px 20px;
       position: relative;
-      &.navactive::after{
+      color: #fff;
+      &.navactive::after {
         content: "";
         display: block;
+        position: absolute;
+        left: 50%;
+        bottom: -10px;
+        width: 50%;
+        height: 2px;
+        background: #fff;
+        border-radius: 50px;
+        transform: translateX(-50%);
       }
     }
   }

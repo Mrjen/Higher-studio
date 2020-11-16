@@ -1,0 +1,74 @@
+.sumitcom {
+  width: 100%;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .main {
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 130px 0 0 0;
+    .title {
+      font-size: 34px;
+      font-weight: 400;
+      text-align: center;
+      color: #333333;
+      margin: 0 auto 24px auto;
+    }
+    .subtitle {
+      font-size: 14px;
+      text-align: center;
+      color: #8b8f98;
+      margin-bottom: 48px;
+    }
+
+    .form {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 40px) 1fr 50px;
+      gap: 15px 15px;
+      grid-template-areas:
+        ". ."
+        ". ."
+        "textArea textArea"
+        ". .";
+      align-items: center;
+      .input {
+        // width: 310px;
+        padding: 0 14px;
+        height: 42px;
+        background: #ffffff;
+        border: 1px solid #d9d9d9;
+      }
+      .submit {
+        width: 168px;
+        line-height: 50px;
+        text-align: center;
+        color: #fff;
+        font-size: 18px;
+        background: #40cc1d;
+        border-radius: 6px;
+        border: none;
+        cursor: pointer;
+      }
+    }
+    .textArea {
+      grid-area: textArea;
+      width: 650px;
+      height: 140px;
+      padding: 14px;
+      background: #ffffff;
+      border: 1px solid #d9d9d9;
+      outline: none;
+    }
+    .wechat {
+      font-size: 16px;
+      text-align: right;
+      color: #666666;
+      .num {
+        color: #40cc1d;
+      }
+    }
+  }
+}

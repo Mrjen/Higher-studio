@@ -8,11 +8,18 @@
     "start": "next start"
   },
   "dependencies": {
+    "@types/react-grid-layout": "^1.1.1",
+    "@types/video.js": "^7.3.11",
     "@zeit/next-sass": "^1.0.1",
+    "muuri": "^0.9.3",
+    "muuri-react": "^3.1.6",
     "next": "9.5.5",
     "node-sass": "4.14.1",
     "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react-dom": "16.13.1",
+    "react-grid-layout": "^1.1.1",
+    "react-hook-form": "^6.11.1",
+    "video.js": "^7.10.2"
   },
   "devDependencies": {
     "@types/node": "^14.11.8",

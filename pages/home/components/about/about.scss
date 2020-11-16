@@ -1,0 +1,51 @@
+.about {
+  width: 100%;
+  min-height: 766px;
+  display: flex;
+  // justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: #f3f7ff;
+  .main {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 130px 0 0 0;
+    .title {
+      font-size: 34px;
+      font-weight: 400;
+      text-align: center;
+      color: #333333;
+      margin: 0 auto 24px auto;
+    }
+    .subtitle {
+      font-size: 14px;
+      text-align: center;
+      color: #8b8f98;
+    }
+    .desc {
+      max-width: 939px;
+      min-height: 170px;
+      margin: 40px auto 0 auto;
+      font-size: 16px;
+      font-family: PingFangSC, PingFangSC-Regular;
+      font-weight: 400;
+      text-align: center;
+      color: #333333;
+      line-height: 34px;
+      letter-spacing: 0px;
+    }
+    .lookmore {
+      width: 160px;
+      background: #40cc1d;
+      border-radius: 6px;
+      text-align: center;
+      line-height: 48px;
+      font-size: 16px;
+      text-align: center;
+      color: #ffffff;
+      margin: 70px auto 0 auto;
+      cursor: pointer;
+    }
+  }
+}
