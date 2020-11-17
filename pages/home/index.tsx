@@ -80,7 +80,7 @@ const Home = () => {
   };
 
   useEffect(() => {
-    init();
+    // init();
 
     return () => {
       player?.dispose();
@@ -96,7 +96,7 @@ const Home = () => {
           <p className={style.sub_title}>我们追求极致设计体验，用心做设计并服务号每一个客户</p>
           <a className={style.contact}>联系我们</a>
         </div>
-        <video ref={videoRef} className={style.bgvideo01 + " "}></video>
+        {/* <video ref={videoRef} className={style.bgvideo01 + " "}></video> */}
       </section>
 
       <section className={style.section02}>
