@@ -1,7 +1,10 @@
-import React, { useEffect, useRef, useState } from "react";
+import { observer } from "mobx-react-lite";
+import React, { useEffect, useRef } from "react";
 import videojs from "video.js";
 import ContactCom from "../../components/contactCom";
 import PageHeader from "../../components/pageHeader";
+import WorkCaseNav from "../../components/workCaseNav";
+import { useStore } from "../../stores/index.store";
 import About from "./components/about";
 import GridLayoutCom from "./components/gridlayoutCom";
 import Performance from "./components/performance";
@@ -10,46 +13,17 @@ import SumitCom from "./components/sumitCom";
 import Thank from "./components/thank";
 import style from "./home.scss";
 
-const Home = () => {
+const Home = observer(() => {
   const videoRef = useRef<any>();
 
   const videoBg = "https://asset-1256405151.cos.ap-shenzhen-fsi.myqcloud.com/index_bg_video.mp4";
   let player: any = null;
 
-  const [workCase, setWorkCase] = useState([
-    {
-      title: "全部",
-      active: true,
-    },
-    {
-      title: "网站设计",
-      active: false,
-    },
-    {
-      title: "移动APP设计",
-      active: false,
-    },
-    {
-      title: "软件见面设计",
-      active: false,
-    },
-    {
-      title: "后台界面设计",
-      active: false,
-    },
-    {
-      title: "小程序设计",
-      active: false,
-    },
-    {
-      title: "品牌LOGO",
-      active: false,
-    },
-    {
-      title: "VI视觉设计",
-      active: false,
-    },
-  ]);
+  // const [workCase, setWorkCase] = useState();
+
+  const {
+    homeStore: { workCase, changeWorkCaseActive },
+  } = useStore();
 
   const init = () => {
     player = videojs(
@@ -103,15 +77,7 @@ const Home = () => {
         <p className={style.section02_title}>我们积累了各行各业丰富的案例和经验</p>
         <p className={style.section02_subtitle}>我们积累了各行各业丰富的案例和经验</p>
 
-        <ul className={style.workcase_nav}>
-          {workCase.map((el) => {
-            return (
-              <li key={el.title} className={`${style.workcase_navitem} ${el.active && style.active}`}>
-                {el.title}
-              </li>
-            );
-          })}
-        </ul>
+        <WorkCaseNav workCase={workCase} tapItem={(idx) => changeWorkCaseActive(idx)} />
         <GridLayoutCom />
         <Performance />
         <ServiceCom />
@@ -122,6 +88,6 @@ const Home = () => {
       </section>
     </div>
   );
-};
+});
 
 export default Home;

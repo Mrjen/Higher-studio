@@ -4,15 +4,15 @@ import style from "./contactCom.scss";
 const ContactCom = () => {
   const [linsIcons] = useState([
     {
-      icon: "https://oktools.net/ph/40x40?t=LOGO",
+      icon: "https://oktools.net/ph/40x40?t=LOGO1",
       url: "",
     },
     {
-      icon: "https://oktools.net/ph/40x40?t=LOGO",
+      icon: "https://oktools.net/ph/40x40?t=LOGO2",
       url: "",
     },
     {
-      icon: "https://oktools.net/ph/40x40?t=LOGO",
+      icon: "https://oktools.net/ph/40x40?t=LOGO3",
       url: "",
     },
   ]);

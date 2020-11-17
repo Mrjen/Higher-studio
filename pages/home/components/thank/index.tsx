@@ -11,7 +11,7 @@ const Thank = () => {
       <ul className={style.logos}>
         {logos.map((el) => {
           return (
-            <li className={style.logoli}>
+            <li className={style.logoli} key={el}>
               <img className={style.logo} src={`https://oktools.net/ph/240x120`} />
             </li>
           );

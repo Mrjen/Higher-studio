@@ -1,0 +1,35 @@
+.banner {
+  width: 100%;
+  height: 370px;
+  background-image: url("https://oktools.net/ph/800x200");
+  background-size: cover;
+  margin-top: -100px;
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .title {
+    font-size: 34px;
+    text-align: center;
+    color: #ffffff;
+    margin: 0 auto 20px auto;
+  }
+  .subtitle {
+    opacity: 0.6;
+    font-size: 14px;
+    text-align: center;
+    color: #ffffff;
+  }
+}
+
+.navstyle {
+  width: 100%;
+  height: 84px;
+  background: #ffffff;
+  box-shadow: 0px 2px 19px 0px rgba(214, 214, 214, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

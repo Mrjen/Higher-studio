@@ -1,0 +1,15 @@
+.workcase_nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+.workcase_navitem {
+  font-size: 16px;
+  color: #666666;
+  padding: 16px;
+  cursor: pointer;
+  &.active {
+    color: #40cc1d;
+  }
+}

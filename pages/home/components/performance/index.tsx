@@ -32,7 +32,7 @@ const Performance = () => {
       <ul className={style.performance_list}>
         {Plist.map((el) => {
           return (
-            <li className={style.performance_list_item}>
+            <li key={el.tag} className={style.performance_list_item}>
               <div className={style.row}>
                 <div className={style.counts}>{el.count}</div>
                 <div className={style.tag}>{el.tag}</div>
