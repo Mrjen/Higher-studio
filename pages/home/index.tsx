@@ -54,7 +54,7 @@ const Home = observer(() => {
   };
 
   useEffect(() => {
-    // init();
+    init();
 
     return () => {
       player?.dispose();
