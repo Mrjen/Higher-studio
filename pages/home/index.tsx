@@ -49,6 +49,7 @@ const Home = observer(() => {
         const btn = document.querySelector(".vjs-big-play-button");
         btn?.setAttribute("style", "display: none");
         document.querySelector(".vjs-error-display")?.setAttribute("style", "display: none")
+        document.querySelector(".vjs-loading-spinner")?.setAttribute("style", "display: none")
       }
     );
     player.controls(false);
