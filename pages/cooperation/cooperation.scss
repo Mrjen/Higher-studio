@@ -1,0 +1,75 @@
+.banner {
+    width: 100%;
+    height: 370px;
+    background-image: url("https://oktools.net/ph/800x200");
+    background-size: cover;
+    margin-top: -100px;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .title {
+      font-size: 34px;
+      text-align: center;
+      color: #ffffff;
+      margin: 0 auto 20px auto;
+      display: flex;
+      align-items: center;
+    }
+    .img_logo{
+        display: block;
+        width: 364px;
+        height: 34px;
+        border: 1px solid red;
+        margin-right: 10px;
+    }
+}
+
+.main{
+  width: 1200px;
+  display: flex;
+  margin: 24px auto 0 auto;
+  .left{
+    width: 200px;
+    border-right: 1px solid #dedede;
+    padding-top: 40px;
+  }
+  .right{
+    flex: 1;
+    padding: 0 0 0 66px;
+  }
+  .ptitle{
+    font-size: 55px;
+    font-weight: 300;
+    text-align: left;
+    color: #131017;
+    margin: 0 0 24px 0;
+  }
+  .ptitle:not(:nth-child(1)){
+    margin-top: 60px;
+  }
+  .content{
+    font-size: 18px;
+    font-weight: 300;
+    text-align: left;
+    color: #575757;
+    line-height: 26px;
+  }
+  .left_item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    cursor: pointer;
+    .icon{
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+    }
+    .icon_text{
+      font-size: 20px;
+      text-align: left;
+      color: #131017;
+    }
+  }
+}
